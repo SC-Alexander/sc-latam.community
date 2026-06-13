@@ -190,10 +190,9 @@ footer h3{
         font-size:1rem;
         padding:0 20px;
     }
-
-}
-.logo img{
+    
+    .logo img{
     height:60px;
     width:auto;
     display:block;
-}
+    }
