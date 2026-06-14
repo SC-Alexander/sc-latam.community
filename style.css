@@ -205,3 +205,58 @@ footer h3{
         height:35px;
     }
 }
+.hero-logo h1{
+    font-size:180px;
+    line-height:1;
+    font-weight:900;
+    margin:0;
+    background:linear-gradient(
+        90deg,
+        #1e5eff,
+        #ffffff
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-logo h2{
+    margin-top:-10px;
+    font-size:40px;
+    letter-spacing:8px;
+    color:white;
+    font-style:italic;
+}
+
+.slogan{
+    margin-top:30px;
+    font-size:28px;
+    font-weight:600;
+}
+
+.game-tag{
+    margin-top:25px;
+    font-size:30px;
+    color:#ffb300;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+    .hero-logo h1{
+        font-size:120px;
+    }
+
+    .hero-logo h2{
+        font-size:22px;
+        letter-spacing:4px;
+    }
+
+    .slogan{
+        font-size:18px;
+    }
+
+    .game-tag{
+        font-size:24px;
+    }
+
+}
