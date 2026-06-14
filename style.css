@@ -14,7 +14,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
+    padding:15px 8%;
     background:#0b1024;
     position:sticky;
     top:0;
@@ -22,10 +22,11 @@ header{
     border-bottom:1px solid rgba(255,255,255,0.1);
 }
 
-.logo{
-    font-size:1.5rem;
-    font-weight:bold;
-    color:#1e5eff;
+.logo img{
+    height:40px;
+    width:auto;
+    display:block;
+    border-radius:8px;
 }
 
 nav{
@@ -37,6 +38,7 @@ nav a{
     color:white;
     text-decoration:none;
     transition:.3s;
+    font-weight:bold;
 }
 
 nav a:hover{
@@ -50,6 +52,10 @@ nav a:hover{
     border-radius:8px;
     text-decoration:none;
     font-weight:bold;
+}
+
+.btn-header:hover{
+    opacity:0.9;
 }
 
 .hero{
@@ -91,6 +97,10 @@ nav a:hover{
     text-decoration:none;
     border-radius:10px;
     font-weight:bold;
+}
+
+.btn-main:hover{
+    opacity:0.9;
 }
 
 .cards{
@@ -190,9 +200,8 @@ footer h3{
         font-size:1rem;
         padding:0 20px;
     }
-    
+
     .logo img{
-    height:60px;
-    width:auto;
-    display:block;
+        height:35px;
     }
+}
