@@ -8,6 +8,7 @@
 body{
     background:#050816;
     color:white;
+    overflow-x:hidden;
 }
 
 /* HEADER */
@@ -21,7 +22,7 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    border-bottom:1px solid rgba(255,255,255,0.08);
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .logo{
@@ -72,6 +73,7 @@ nav a:hover{
 
 .btn-header:hover{
     transform:translateY(-2px);
+    box-shadow:0 0 15px rgba(30,94,255,.5);
 }
 
 /* HERO */
@@ -82,14 +84,14 @@ nav a:hover{
     justify-content:center;
     align-items:flex-start;
     text-align:center;
-    padding-top:70px;
+    padding-top:50px;
 
     background:
     linear-gradient(
-        rgba(5,8,22,0.75),
-        rgba(5,8,22,0.90)
+        rgba(5,8,22,.75),
+        rgba(5,8,22,.92)
     ),
-    url("https://raw.githubusercontent.com/Ale-Bs/sc-community/e031d6e37ba490a3310574251a482c6f62d9fcc4/file_00000000c1c0720ea09a25d1b448ce1c.png");
+    url("https://raw.githubusercontent.com/Ale-Bs/sc-community/refs/heads/main/Fondo1.png");
 
     background-size:cover;
     background-position:center;
@@ -101,43 +103,51 @@ nav a:hover{
 }
 
 .hero-logo h1{
-    font-size:180px;
+    font-size:190px;
     line-height:1;
-    margin:0;
     font-weight:900;
+
     background:linear-gradient(
-        90deg,
-        #4a7dff,
-        #c8d7ff
+        180deg,
+        #ffffff,
+        #8ab0ff,
+        #4a7dff
     );
+
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+
+    text-shadow:
+        0 0 20px rgba(74,125,255,.5),
+        0 0 40px rgba(74,125,255,.3);
 }
 
 .hero-logo h2{
     margin-top:-10px;
-    font-size:40px;
+    font-size:42px;
+    font-weight:800;
     letter-spacing:8px;
-    color:white;
-    font-style:italic;
+
+    background:linear-gradient(
+        180deg,
+        #ffffff,
+        #8ab0ff,
+        #4a7dff
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
 .slogan{
-    margin-top:25px;
+    margin-top:20px;
     font-size:28px;
     font-weight:600;
 }
 
-.game-tag{
-    margin-top:20px;
-    color:#ffb300;
-    font-size:30px;
-    font-weight:bold;
-}
-
 .btn-main{
     display:inline-block;
-    margin-top:30px;
+    margin-top:35px;
     background:#7b2cff;
     color:white;
     text-decoration:none;
@@ -148,16 +158,25 @@ nav a:hover{
 }
 
 .btn-main:hover{
-    transform:translateY(-2px);
+    transform:translateY(-3px) scale(1.05);
+    box-shadow:
+        0 0 15px #7b2cff,
+        0 0 30px rgba(123,44,255,.7);
 }
 
-/* CARDS */
+/* TARJETAS */
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    padding:80px 8%;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+
+    padding:40px 8% 60px;
+
+    margin-top:-100px;
+
+    position:relative;
+    z-index:10;
 }
 
 .card{
@@ -165,17 +184,28 @@ nav a:hover{
     padding:30px;
     border-radius:15px;
     border:1px solid rgba(255,255,255,.08);
-    transition:.3s;
+    transition:.35s;
+    text-align:center;
 }
 
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 25px rgba(30,94,255,.4);
+.icon{
+    font-size:40px;
+    margin-bottom:15px;
 }
 
 .card h2{
     color:#4a7dff;
     margin-bottom:15px;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:
+        0 0 15px #4a7dff,
+        0 0 30px rgba(74,125,255,.6);
+
+    border-color:#4a7dff;
 }
 
 /* HISTORIAL */
@@ -199,6 +229,7 @@ nav a:hover{
     background:#101933;
     padding:25px;
     border-radius:15px;
+    border:1px solid rgba(255,255,255,.08);
 }
 
 /* REDES */
@@ -220,6 +251,7 @@ nav a:hover{
     background:#101933;
     padding:20px 35px;
     border-radius:12px;
+    border:1px solid rgba(255,255,255,.08);
 }
 
 /* FOOTER */
@@ -250,26 +282,12 @@ footer h3{
         justify-content:center;
     }
 
-    .logo{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:center;
-        gap:10px;
-    }
-
     .logo img{
         height:45px;
     }
 
     .logo span{
         font-size:15px;
-        font-weight:700;
-        white-space:nowrap;
-    }
-
-    .hero{
-        padding-top:40px;
     }
 
     .hero-logo h1{
@@ -286,7 +304,12 @@ footer h3{
         padding:0 20px;
     }
 
-    .game-tag{
-        font-size:22px;
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+        margin-top:-50px;
+    }
+
+    .icon{
+        font-size:30px;
     }
 }
