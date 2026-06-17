@@ -15,7 +15,7 @@ SC LATAM Community es una comunidad enfocada en la organización de torneos de M
 
 ## 📝 Registro
 
-https://forms.gle/yDiQMVin7CaouZJt6
+https://sc-alexander.github.io/sc-latam-community-counter/
 
 ## 📱 Redes Sociales
 
