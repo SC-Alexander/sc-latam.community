@@ -20,7 +20,7 @@
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#torneos">Torneos</a>
-        <a href="https://add.aternos.org/SCLatamCommunity">Servidores</a>
+        <a href="#" onclick="mostrarServidores()">Servidores</a>
         <a href="#historial">Historial</a>
     </nav>
 
@@ -132,6 +132,87 @@
     <p>Moderador / Alexander</p>
     <p>© 2026 Todos los derechos reservados.</p>
 </footer>
+<!-- PANTALLA MINECRAFT -->
 
+<section id="minecraft-page" class="hero" style="display:none;">
+
+    <div class="hero-content">
+
+        <div class="hero-logo">
+            <h1>SC</h1>
+            <h2>MINECRAFT SERVERS</h2>
+        </div>
+
+        <p class="slogan">
+            Explora nuestros servidores oficiales
+        </p>
+
+        <section class="cards">
+
+            <a href="https://add.aternos.org/SCLatamCommunity"
+               target="_blank"
+               class="card minecraft-link">
+
+                <div class="icon">🌎</div>
+                <h2>SC SURVIVAL</h2>
+                <p>Únete al servidor survival oficial.</p>
+
+            </a>
+
+            <div class="card">
+                <div class="icon">⚔️</div>
+                <h2>ARENA PVP</h2>
+                <p>Próximamente.</p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎊</div>
+                <h2>SC EVENTOS</h2>
+                <p>Próximamente.</p>
+            </div>
+
+        </section>
+
+        <a class="btn-main" href="#" onclick="volverInicio()">
+            ⬅ VOLVER AL INICIO
+        </a>
+
+    </div>
+
+</section>
+
+<script>
+
+function mostrarServidores(){
+
+    document.getElementById("inicio").style.display="none";
+    document.getElementById("torneos").style.display="none";
+    document.getElementById("historial").style.display="none";
+
+    const social=document.querySelector(".social");
+    const footer=document.querySelector("footer");
+
+    social.style.display="none";
+    footer.style.display="none";
+
+    document.getElementById("minecraft-page").style.display="flex";
+}
+
+function volverInicio(){
+
+    document.getElementById("inicio").style.display="flex";
+    document.getElementById("torneos").style.display="grid";
+    document.getElementById("historial").style.display="block";
+
+    const social=document.querySelector(".social");
+    const footer=document.querySelector("footer");
+
+    social.style.display="block";
+    footer.style.display="block";
+
+    document.getElementById("minecraft-page").style.display="none";
+}
+
+</script>
 </body>
 </html>
