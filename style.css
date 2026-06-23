@@ -317,7 +317,16 @@ footer h3{
     text-decoration:none;
     color:white;
 }
+    
+.minecraft-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    padding:40px 8%;
+    margin-top:30px;
+}
 
-.minecraft-link:hover{
-    color:white;
+@media(max-width:768px){
+    .minecraft-cards{
+        grid-template-columns:1fr;
 }
