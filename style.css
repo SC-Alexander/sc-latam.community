@@ -321,3 +321,26 @@ footer h3{
 .minecraft-link:hover{
     color:white;
 }
+
+.cards1.0{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+
+    padding:40px 8% 60px;
+
+    margin-top:-100px;
+
+    position:relative;
+    z-index:10;
+}
+
+.cards1.0{
+    background:#101933;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+    text-align:center;
+}
+    
