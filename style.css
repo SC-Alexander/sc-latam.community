@@ -321,7 +321,7 @@ footer h3{
 .minecraft-link:hover{
     color:white;
 }
-
+    
 .cards1.0{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -343,4 +343,18 @@ footer h3{
     transition:.35s;
     text-align:center;
 }
-    
+
+.cards1.0 h2{
+    color:#4a7dff;
+    margin-bottom:15px;
+}
+
+.cards1.0:hover{
+    transform:translateY(-10px) scale(1.03);
+
+    box-shadow:
+        0 0 15px #4a7dff,
+        0 0 30px rgba(74,125,255,.6);
+
+    border-color:#4a7dff;
+}
