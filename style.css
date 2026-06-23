@@ -317,6 +317,10 @@ footer h3{
     text-decoration:none;
     color:white;
 }
+
+.minecraft-link:hover{
+    color:white;
+}
     
 .minecraft-cards{
     display:grid;
