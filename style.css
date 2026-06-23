@@ -311,5 +311,13 @@ footer h3{
 
     .icon{
         font-size:30px;
-    }
+}
+
+.minecraft-link{
+    text-decoration:none;
+    color:white;
+}
+
+.minecraft-link:hover{
+    color:white;
 }
