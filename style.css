@@ -312,38 +312,83 @@ footer h3{
     .icon{
         font-size:30px;
     }
+    /* ========= MINECRAFT SERVERS ========= */
 
 .minecraft-cards{
+    width:100%;
+    max-width:750px;
+    margin:40px auto;
     display:flex;
     flex-direction:column;
-    align-items:center;
-    gap:20px;
-    margin-top:30px;
+    gap:22px;
 }
 
 .minecraft-btn{
-    width:320px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
     background:#101933;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:15px;
-    padding:20px;
-    text-align:center;
+    border:1px solid rgba(74,125,255,.35);
+    border-radius:18px;
+    padding:22px 28px;
     text-decoration:none;
     color:white;
-    transition:.3s;
+    transition:.35s;
 }
 
 .minecraft-btn:hover{
-    transform:translateY(-5px);
+    transform:translateY(-4px);
     border-color:#4a7dff;
-    box-shadow:0 0 20px rgba(74,125,255,.6);
+    box-shadow:
+        0 0 18px rgba(74,125,255,.45);
 }
 
-.minecraft-btn h2{
+.minecraft-icon{
+    font-size:55px;
+    margin-right:20px;
+}
+
+.minecraft-info{
+    flex:1;
+    text-align:left;
+}
+
+.minecraft-info h2{
     color:#4a7dff;
-    margin:10px 0;
+    margin-bottom:6px;
+    font-size:28px;
 }
 
-.minecraft-btn p{
-    color:white;
+.minecraft-info p{
+    color:#d9d9d9;
+    font-size:16px;
+}
+
+.arrow{
+    font-size:42px;
+    color:#4a7dff;
+}
+
+@media(max-width:768px){
+
+    .minecraft-btn{
+        padding:18px;
+    }
+
+    .minecraft-icon{
+        font-size:42px;
+    }
+
+    .minecraft-info h2{
+        font-size:22px;
+    }
+
+    .minecraft-info p{
+        font-size:14px;
+    }
+
+    .arrow{
+        font-size:32px;
+    }
+
 }
