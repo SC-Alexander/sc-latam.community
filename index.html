@@ -195,3 +195,31 @@
     </div>
 
 </section>
+
+    <script>
+
+function mostrarServidores(){
+
+    document.getElementById("inicio").style.display="none";
+    document.getElementById("torneos").style.display="none";
+    document.getElementById("historial").style.display="none";
+
+    document.querySelector(".social").style.display="none";
+    document.querySelector("footer").style.display="none";
+
+    document.getElementById("minecraft-page").style.display="flex";
+}
+
+function volverInicio(){
+
+    document.getElementById("inicio").style.display="flex";
+    document.getElementById("torneos").style.display="grid";
+    document.getElementById("historial").style.display="block";
+
+    document.querySelector(".social").style.display="block";
+    document.querySelector("footer").style.display="block";
+
+    document.getElementById("minecraft-page").style.display="none";
+}
+
+    </script>
